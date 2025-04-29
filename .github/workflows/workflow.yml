@@ -10,3 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: python:3.9-slim
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Python version check
+        run: python --version
